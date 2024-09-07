@@ -45,5 +45,10 @@ class MainActivity : AppCompatActivity() {
             binding.cbAdult.isChecked = false
         }
 
+        binding.btnLoad.setOnClickListener {
+            binding.etName.setText(pref.getString("name", "Name"))
+            binding.etAge.setText(pref.getInt("age", 18).toString())
+            binding.cbAdult.isChecked = pref.getBoolean("isAdult", true)
+        }
     }
 }
