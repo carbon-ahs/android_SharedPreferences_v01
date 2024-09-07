@@ -39,5 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.btnClear.setOnClickListener {
+            binding.etName.setText("")
+            binding.etAge.setText("")
+            binding.cbAdult.isChecked = false
+        }
+
     }
 }
