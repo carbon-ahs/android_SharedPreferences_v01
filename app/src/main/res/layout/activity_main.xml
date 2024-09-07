@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -16,33 +16,40 @@
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/et_age"
+        android:id="@+id/etAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_name"
+        android:layout_below="@id/etName"
         android:ems="10"
         android:hint="Age"
         android:inputType="number" />
 
     <CheckBox
-        android:id="@+id/cb_adult"
+        android:id="@+id/cbAdult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_age"
+        android:layout_below="@id/etAge"
         android:text="Adult?" />
 
     <Button
-        android:id="@+id/btn_load"
+        android:id="@+id/btnLoad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb_adult"
+        android:layout_below="@id/cbAdult"
         android:text="Load" />
 
     <Button
-        android:id="@+id/btn_save"
+        android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb_adult"
-        android:layout_toRightOf="@+id/btn_load"
+        android:layout_below="@id/cbAdult"
+        android:layout_toRightOf="@+id/btnLoad"
         android:text="Save" />
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbAdult"
+        android:layout_toRightOf="@+id/btnSave"
+        android:text="Clear" />
 </RelativeLayout>
